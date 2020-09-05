@@ -34,14 +34,11 @@ public class MouseHoverTest {
         WebElement elementFirst = Driver.get().findElement(By.xpath("(//img)[2]"));
         WebElement elementSecond = Driver.get().findElement(By.xpath("(//img)[3]"));
         WebElement elementThird = Driver.get().findElement(By.xpath("(//img)[4]"));
-        // moveToElement()  --> move the mouse to given target
-        // perform  --> triggers the action
+        
         actions.moveToElement(elementFirst).pause(1000).moveToElement(elementSecond).pause(1000).
                 moveToElement(elementThird).build().perform();
 
 
-//        Assert.assertTrue(VerificationUtils.isElementDisplayed(
-//                driver, By.linkText("View profile")));
 
     }
 }
